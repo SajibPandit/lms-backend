@@ -13,7 +13,7 @@ const errorMiddleware = (
 ) => {
   //set default status code and message if not provided
   err.statusCode = err.statusCode || 500;
-  err.message = err.message || "Internal server error";
+  err.message = err.message || "Internal server error.";
 
   //wrong mongodb id error
   if ((err.name = "CastError")) {
